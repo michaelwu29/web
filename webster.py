@@ -92,11 +92,11 @@ if uploaded_file is not None:
         st.success("Saved to invoices_extracted.csv ✅")
 
 
-csv = df.to_csv(index=False).encode("utf-8-sig")  # utf-8-sig for Chinese compatibility
-st.download_button(
-    label="📥 下载 CSV",
-    data=csv,
-    file_name="invoice_data.csv",
-    mime="text/csv"
-)
+    csv = df.to_csv(index=False).encode("utf-8-sig")  # utf-8-sig for Chinese compatibility
+    st.download_button(
+        label="📥 下载 CSV",
+        data=csv,
+        file_name="invoice_data.csv",
+        mime="text/csv"
+    )
 #Change to Commit
