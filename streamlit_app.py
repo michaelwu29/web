@@ -1,0 +1,1 @@
+streamlit run /Users/michaelwu/PycharmProjects/web/.venv/webster.py
