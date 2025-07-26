@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import fitz  # PyMuPDF
-from extract_invoice import extract_invoice_data
+from webster import extract_invoice_data
 
 st.set_page_config(page_title="发票提取器", layout="centered")
 st.title("📄 发票提取器")
