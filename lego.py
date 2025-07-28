@@ -47,7 +47,7 @@ def extract_invoice_data(pdf_path):
             continue
 
         # Extract 发票号码
-        if expect_invoice_number and re.fullmatch(r"\d{18,20}", line):
+        if expect_invoice_number and re.fullmatch(r"\d{19,20}", line):
             invoice_number = line
             expect_invoice_number = False
 
